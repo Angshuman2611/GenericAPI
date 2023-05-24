@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     
     // can use this instead of var user: [User] = []
     var models:[Codable] = []
+    let hasWarning :String = ""
+    let noWarning2 = NSNumber() as! Int
     
     struct  Constants {
         static let url = URL(string: "https://jsonplaceholder.typicode.com/users")
@@ -27,6 +29,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         fetchAPI()
+        
     }
     
     
